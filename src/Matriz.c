@@ -42,7 +42,14 @@ void Anda_pela_matriz(int Tamanho_matriz, int **matriz){
 
             //BAIXO MAIOR - PRIMEIRA COLUNA
 
-            else if(matriz[i + 1][j] > matriz[i][j + 1] && i < Tamanho_matriz - 1){
+            else if(matriz[i + 1][j] > matriz[i][j + 1]){
+                soma += matriz[i + 1][j];
+                i++;
+                matriz[i - 1][j] = invalido;
+                printf("\nBAIXO: %d", soma);
+            }
+
+            else if(matriz[i + 1][j] == matriz[Tamanho_matriz - 1][j]){
                 soma += matriz[i + 1][j];
                 i++;
                 matriz[i - 1][j] = invalido;
