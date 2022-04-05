@@ -49,13 +49,6 @@ void Anda_pela_matriz(int Tamanho_matriz, int **matriz){
                 printf("\nBAIXO: %d", soma);
             }
 
-            else if(matriz[i + 1][j] == matriz[Tamanho_matriz - 1][j]){
-                soma += matriz[i + 1][j];
-                i++;
-                matriz[i - 1][j] = invalido;
-                printf("\nBAIXO: %d", soma);
-            }
-
             //VIZINHOS IGUAIS - PRIMEIRA COLUNA
 
             else if(matriz[i][j + 1] == matriz[i + 1][j]){
