@@ -1,4 +1,4 @@
-# AEDS-Lista de boas-vindas!
+# Algortimo guloso - AEDS
 
 <br><h1>Introdução</h1>
 <p>Algoritmo guloso (ou míope) é uma solução comum para problemas de otimização, pois realiza a escolha que parece ser a melhor <b>no momento</b>, desde modo, espera-se que uma suceção de boas escolhas irão previnir erros em nível global</p>
