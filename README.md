@@ -23,3 +23,4 @@ Como visto na imagem acima, quando é constatado que o valor de baixo é maior, 
 <p>Depois de verificar, avançar uma posição e realizar a atualização do valor da variável "soma", a posição anterior assume o valor da variável 'invalido', que a transforma em 0. Com isso, tirando qualquer possibilidade de entrar em um looping " direita - esquerda " infinito, pois, ele não conseguirá voltar, nunca.
 <hr/>
 <h1>Perguntas</h1>
+<h3>1)</h3><p>Olá</p>
