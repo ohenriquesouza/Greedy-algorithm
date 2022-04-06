@@ -1,5 +1,3 @@
-#include <stdlib.h>
-#include <stdio.h>
 #include "Matriz.h"
 
 int main(){

@@ -1,7 +1,7 @@
 # Algortimo guloso - AEDS
 
 <br><h1>Introdução</h1>
-<p>Algoritmo guloso (ou míope) é uma solução comum para problemas de otimização, pois realiza a escolha que parece ser a melhor <b>no momento</b>, desde modo, espera-se que uma suceção de boas escolhas irão previnir erros em nível global</p>
+<p>Algoritmo guloso (ou míope) está presente em literatura é uma solução comum para problemas de otimização, pois realiza a escolha que parece ser a melhor <b>no momento</b>, desde modo, espera-se que uma suceção de boas escolhas irão previnir erros em nível global</p>
 
 <p>Uma matriz é uma estrutura de dados com duas dimensões (i, j) organizada respectivamente em linhas e colunas. A primeira posição da matriz, (matriz[ 0 ][ 0 ]) se encontra sempre no canto superior esquerdo, enquanto a última posição, (matriz[ i ][ j ]) no canto inferior direito. Essa notação mostra que, no caso da <b>primeira</b> posição, se encontra no começo da Linha 0 com a Coluna 0, por isso [ 0 ][ 0 ], enquanto na <b>última posição</b>, ambas já atingiram seu tamanho máximo, digitado pelo ususário. No caso desse algoritmo, apenas trabalharemos com matrizes quadradas, onde o número de linhas é igual ao de colunas. </P>
 <hr/>
@@ -21,6 +21,14 @@ gerasse uma matriz quadrada ( N x N ) preenchida com valores aleatórios para ca
 </div>
 Como visto na imagem acima, quando é constatado que o valor de baixo é maior, é aplicado um i++, fazendo com que a posição atual desça uma linha e o valor da variavel "soma" é alterado para += matriz[ i + 1 ][ j ] <--Nesse caso que o movimento é para baixo. Essa lógica se repete do mesmo jeito para os lados, alterando para j-- para se movimentar para <b>esquerda</b> e j++ para <b>direita</b>.</p>
 <p>Depois de verificar, avançar uma posição e realizar a atualização do valor da variável "soma", a posição anterior assume o valor da variável 'invalido', que a transforma em 0. Com isso, tirando qualquer possibilidade de entrar em um looping " direita - esquerda " infinito, pois, ele não conseguirá voltar, nunca.
+<h1>Bibliotecas</h1>
+<p>Para o funcionamento do programa, é necessário incluir as seguintes bibliotecas: 
+<ul>
+    <li><code>#include <stdlib.h></code></li>
+    <li><code>#include <stdio.h></code></li>
+    <li><code>#include <stdbool.h></code></li>
+    <li><code>#include <time.h></code></li>
+</ul>
 <hr/>
 <h1>Perguntas</h1>
 <p>1) Sim, com certeza há outros métodos até menos custosos de solucionar este problema.</p>
