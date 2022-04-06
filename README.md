@@ -24,10 +24,10 @@ Como visto na imagem acima, quando é constatado que o valor de baixo é maior, 
 <h1>Bibliotecas</h1>
 <p>Para o funcionamento do programa, é necessário incluir as seguintes bibliotecas: 
 <ul>
-    <li><code>#include <stdlib.h></code></li>
-    <li><code>#include <stdio.h></code></li>
-    <li><code>#include <stdbool.h></code></li>
-    <li><code>#include <time.h></code></li>
+    <li><code>#include 'stdlib.h'</code></li>
+    <li><code>#include 'stdio.h'</code></li>
+    <li><code>#include 'stdbool.h'</code></li>
+    <li><code>#include 'time.h'</code></li>
 </ul>
 <hr/>
 <h1>Perguntas</h1>
