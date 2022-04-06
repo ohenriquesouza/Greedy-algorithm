@@ -36,6 +36,6 @@ Como visto na imagem acima, quando é constatado que o valor de baixo é maior, 
 
 <h1>Perguntas</h1>
 <p>1) Sim, com certeza há outros métodos até menos custosos de solucionar este problema.</p>
-<p>2) Sim, o algoritmo guloso.</p>
+<p>2) Sim, vários. O algoritmo "Huffman coding" por exemplo é um deles.</p>
 <p>3) Não, o algoritmo irá sempre avançar pelos maiores valores em sua vizinhança, sendo assim, todo caminho percorrido por ele, no final, será a soma de todos os maiores valores possíveis de se caminhar.
 </p>
