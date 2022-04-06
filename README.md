@@ -14,6 +14,7 @@ gerasse uma matriz quadrada ( N x N ) preenchida com valores aleatórios para ca
 <p>Para locomover na matriz, foi feita uma função <strong>Anda_Pela_Matriz()</strong> que recebe os mesmos parâmetros que a função anterior. Para esta função, foram criadas duas novas variáveis: um inteiro "soma", que começa recendo o valor da primeira posição da matriz ( soma = matriz[ i ][ j ] <-- Que nesse momento valem 0. ) e uma booleana "invalido" que assume o valor de 'false'.</p>
 <p>O <i>while</i> foi escolhido como método para a repetição dos movimentos. Sua condição é que, ele funcionará enquanto a posição atual na matriz, seja diferente da última possível '[ i != Tamanho_matriz && j != Tamanho_matriz ], garantindo assim que, o programa apenas encerará ao chegar no destino.</p>
 <p>O desenvolvimento da lógica de movimentação foi feito com um conjunto de <code>ifs</code> e <code>elses</code>, onde o algoritmo está sempre olhando para os "vizinhos" e comparando o valor para escolher qual próximo passo. O passo em sí é dado a partir de uma manipulaçao do valor de <i>i</i> e <i>j</i>. Na primeira coluna, por exemplo, os únicos movimentos possíveis são de ir para direita ou para baixo, já que não possui mais uma coluna a sua esquerda, a mesma condição acontece quando a posição atual se encontra na ultima coluna, seus movimentos serão limitados a esquerda e baixo.
+<h3>Exemplo de verificação e movimentação ⇣</h3> 
 <div align="center">
 <img src="imgs/if-exemplo.png">
 </div>
