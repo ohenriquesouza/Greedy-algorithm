@@ -23,4 +23,7 @@ Como visto na imagem acima, quando é constatado que o valor de baixo é maior, 
 <p>Depois de verificar, avançar uma posição e realizar a atualização do valor da variável "soma", a posição anterior assume o valor da variável 'invalido', que a transforma em 0. Com isso, tirando qualquer possibilidade de entrar em um looping " direita - esquerda " infinito, pois, ele não conseguirá voltar, nunca.
 <hr/>
 <h1>Perguntas</h1>
-<h3>1)</h3><p>Olá</p>
+<p>1) Sim, com certeza há outros métodos até menos custosos de solucionar este problema.</p>
+<p>2) Sim, o algoritmo guloso.</p>
+<p>3) Não, o algoritmo irá sempre avançar pelos maiores valores em sua vizinhança, sendo assim, todo caminho percorrido por ele, no final, será a soma de todos os maiores valores possíveis de se caminhar.
+</p>
