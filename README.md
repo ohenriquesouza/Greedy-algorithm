@@ -10,7 +10,7 @@ gerasse uma matriz quadrada ( N x N ) preenchida com valores aleatórios para ca
 <h1>Lógica utilizada</h1>
 <h2>Criação da matriz</h2>
 <p>Para a criação da matriz, foi feita uma função <strong>Cria_Matriz()</strong> que recebe como parâmetro um número inteiro "Tamanho_matriz", coletado no 'main.c' e um inteiro "**matriz", que teve seu devido espaço de memória alocado também no 'main.c' através da função '<code>malloc()</code>'. A matriz é preenchida a partir de 2 loops de for, um de <i>i</i> e o outro de <i>j</i> que, com o auxílio da função externa '<code>rand()</code>' distribui valores aleatórios para cada posição da matriz.
-<h2>Movimentação pela matriz<h2>
+<h2>Movimentação pela matriz</h2>
 <p>Para locomover na matriz, foi feita uma função <strong>Anda_Pela_Matriz()</strong> que recebe os mesmos parâmetros que a função anterior. Para esta função, foram criadas duas novas variáveis: um inteiro "soma", que começa recendo o valor da primeira posição da matriz (soma = matriz[ i ][ j ] <-- Que nesse momento valem 0.) e uma booleana "invalido" que assume o valor de 'false'.</p>
 <p>O <i>while</i> foi escolhido como método para a repetição dos movimentos. Sua condição é que, ele funcionará enquanto a poscição atual na matriz, seja diferente da última possível '[i != Tamanho_matriz && j != Tamanho_matriz], garantindo assim que, o programa apenas encerará ao chegar no destino.</p>
 <p>O desenvolvimento da lógica foi feito com um conjunto de <code>ifs</code> e <code>elses</code>, onde estão sempre olhando para os "vizinhos" e comparando o valor para escolher qual próximo passo.
