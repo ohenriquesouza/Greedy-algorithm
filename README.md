@@ -5,9 +5,11 @@
 
 <p>Uma matriz é uma estrutura de dados com duas dimensões (i, j) organizada respectivamente em linhas e colunas. A primeira posição da matriz, (matriz[ 0 ][ 0 ]) se encontra sempre no canto superior esquerdo, enquanto a última posição, (matriz[ i ][ j ]) no canto inferior direito. Essa notação mostra que, no caso da <b>primeira</b> posição, se encontra no começo da Linha 0 com a Coluna 0, por isso [ 0 ][ 0 ], enquanto na <b>última posição</b>, ambas já atingiram seu tamanho máximo, digitado pelo ususário. No caso desse algoritmo, apenas trabalharemos com matrizes quadradas, onde o número de linhas é igual ao de colunas. </P>
 <hr/>
+
 <h1>Sobre o projeto</h1>
 <p>Nesse projeto, o desafio era fazer um algoritmo que
 gerasse uma matriz quadrada ( N x N ) preenchida com valores aleatórios para cada posição, onde 'N' é um número inteiro digitado pelo usuário no 'main.c' e, a partir de sua primeira posição ([ 0 ][ 0 ]), fosse caminhando até a última ([ N ][ N ]), sempre escolhando o "vizinho" de maior valor para dar o próximo passo. Ao atingir o destino, o algoritmo deve apresentar ao usuário o valor de todas as posições que ele passou somadas em um printf("Soma total: X"); </p>
+
 <h1>Lógica utilizada</h1>
 <h2>Criação da matriz</h2>
 <p>Para a criação da matriz, foi feita uma função <strong>Cria_Matriz()</strong> que recebe como parâmetro um número inteiro "Tamanho_matriz", coletado no 'main.c' e um inteiro "**matriz", que teve seu devido espaço de memória alocado também no 'main.c' através da função '<code>malloc()</code>'. A matriz é preenchida a partir de 2 loops de for, um de <i>i</i> e o outro de <i>j</i> que, com o auxílio da função externa '<code>rand()</code>' distribui valores aleatórios para cada posição da matriz.
@@ -21,6 +23,7 @@ gerasse uma matriz quadrada ( N x N ) preenchida com valores aleatórios para ca
 </div>
 Como visto na imagem acima, quando é constatado que o valor de baixo é maior, é aplicado um i++, fazendo com que a posição atual desça uma linha e o valor da variavel "soma" é alterado para += matriz[ i + 1 ][ j ] <--Nesse caso que o movimento é para baixo. Essa lógica se repete do mesmo jeito para os lados, alterando para j-- para se movimentar para <b>esquerda</b> e j++ para <b>direita</b>.</p>
 <p>Depois de verificar, avançar uma posição e realizar a atualização do valor da variável "soma", a posição anterior assume o valor da variável 'invalido', que a transforma em 0. Com isso, tirando qualquer possibilidade de entrar em um looping " direita - esquerda " infinito, pois, ele não conseguirá voltar, nunca.
+
 <h1>Bibliotecas</h1>
 <p>Para o funcionamento do programa, é necessário incluir as seguintes bibliotecas: 
 <ul>
@@ -30,6 +33,7 @@ Como visto na imagem acima, quando é constatado que o valor de baixo é maior, 
     <li><code>#include 'time.h'</code></li>
 </ul>
 <hr/>
+
 <h1>Perguntas</h1>
 <p>1) Sim, com certeza há outros métodos até menos custosos de solucionar este problema.</p>
 <p>2) Sim, o algoritmo guloso.</p>
