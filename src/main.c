@@ -6,7 +6,7 @@ int main(){
     int **matriz;
     int Tamanho_matriz, i;
 
-    printf("Insira o tamanho da matriz (NxN): ");
+    printf("\nInsira o tamanho da matriz (NxN): ");
     scanf("%d", &Tamanho_matriz);
 
     matriz = malloc(Tamanho_matriz*sizeof(int *));
